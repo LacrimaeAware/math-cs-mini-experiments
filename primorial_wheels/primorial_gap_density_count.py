@@ -14,7 +14,7 @@ intervals [start, start+L] (mod M) where
 
     deviation = actual_count - ceil((L+1)/D_p)
 
-is maximized. That tells you how far under your ceiling model can be.
+is maximized. That tells you how far the actual count can fall under the ceiling model.
 """
 
 from math import ceil

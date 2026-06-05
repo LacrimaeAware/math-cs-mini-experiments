@@ -12,9 +12,9 @@ This reproduces stats like:
 "gap 2 merges with gap 4" -> count / (#removals)
 
 Run examples:
-    python wheel_merges.py
-    python wheel_merges.py --primes 2 3 5 7 --next 11
-    python wheel_merges.py --primes 2 3 5 7 11 --next 13
+    python primorial_gap_freq.py
+    python primorial_gap_freq.py --primes 2 3 5 7 --next 11
+    python primorial_gap_freq.py --primes 2 3 5 7 11 --next 13
 """
 
 from __future__ import annotations

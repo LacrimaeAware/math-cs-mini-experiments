@@ -227,7 +227,7 @@ if __name__ == "__main__":
     #   but slow and memory-heavy.
     #
     # By default, we only compare counts using φ(N). If you really want
-    # the full set comparison, set build_traditional=True (at your own cost).
+    # the full set comparison, set build_traditional=True (expensive).
     # ------------------------------------------------------------------
     primes_23 = [2, 3, 5, 7, 11, 13, 17, 19, 23]
     N_23 = math.prod(primes_23)
@@ -236,7 +236,7 @@ if __name__ == "__main__":
         N=N_23,
         primes=primes_23,
         print_limit=50,
-        build_traditional=False,  # set to True only if you're okay with big runs
+        build_traditional=False,  # set to True only for large runs only
         use_progress=True,
     )
 

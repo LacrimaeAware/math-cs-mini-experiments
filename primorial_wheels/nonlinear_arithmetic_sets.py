@@ -1,5 +1,5 @@
 """
-Nonlinear_Arithmetic_Sets.py — signed-sum sets that cover the coprimes mod 210.
+nonlinear_arithmetic_sets.py — signed-sum sets that cover the coprimes mod 210.
 
 Searches for small structured sets A whose signed subset sums (each element +/-)
 are all coprime to 210, and whose positive sums hit every coprime residue in

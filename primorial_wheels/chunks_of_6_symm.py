@@ -1,5 +1,5 @@
 """
-Chunks_of_6_symm.py — visualize coprime residues of a primorial wheel mod 6.
+chunks_of_6_symm.py — visualize coprime residues of a primorial wheel mod 6.
 
 For a primorial-style modulus N, tag each integer in [1..N] as '.' (not coprime
 to N), '1' (coprime and == 1 mod 6) or '5' (coprime and == 5 mod 6), then print

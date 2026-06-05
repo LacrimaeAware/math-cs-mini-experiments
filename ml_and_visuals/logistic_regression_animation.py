@@ -1,5 +1,5 @@
 """
-generateplot.py — animate logistic-regression gradient descent.
+logistic_regression_animation.py — animate logistic-regression gradient descent.
 
 Builds two Gaussian blobs (classes 0 and 1), trains a logistic-regression
 classifier by batch gradient descent, and animates the moving decision boundary

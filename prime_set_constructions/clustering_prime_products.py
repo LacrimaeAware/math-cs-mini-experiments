@@ -1,5 +1,5 @@
 """
-Clustering_Prime_Products.py — partition the first k primes to balance products.
+clustering_prime_products.py — partition the first k primes to balance products.
 
 Exact branch-and-bound optimizer. Use each of the first k primes exactly once and
 split them into groups subject to:

@@ -1,5 +1,5 @@
 """
-Prime_deadends.py — search for left-truncatable prime chains by prepending digits.
+prime_deadends.py — search for left-truncatable prime chains by prepending digits.
 
 Starting from a fixed TAIL, depth-first prepend digits (1..9 by default) to the
 front, keeping only branches that stay prime (Miller-Rabin). Records the deepest
@@ -24,7 +24,7 @@ from prime_lib import is_probable_prime, ensure_output_dir
 # ==============================
 
 # Tail T: the fixed suffix. Example:
-#  - 3212336353  (your left-truncatable prime tail)
+#  - 3212336353  (a left-truncatable prime tail)
 #  - 997         (simpler test)
 TAIL = 56357686312646216567629137
 
@@ -82,7 +82,7 @@ def left_truncations(n: int) -> List[int]:
 def check_left_truncatable_prime_tail(tail: int) -> bool:
     """
     Check that tail and all its left truncations are prime.
-    This is what you described for 3212336353.
+    This is the property checked for 3212336353.
     """
     for x in left_truncations(tail):
         if not is_probable_prime(x):
@@ -113,9 +113,9 @@ def digit_order(last_digit: Optional[int]) -> List[int]:
     Choose the order in which to try digits at this step.
 
     Right now: simple fixed order.
-    You can modify this to implement your "reverse based on last digit" idea.
+    This could be changed to reverse the digit order based on the last digit.
 
-    Example for your idea (commented out):
+    Example variant (commented out):
         - if last_digit is None: try 1..9
         - if last_digit in {1,2,3,4,5}: try 9..1
         - else: try 1..9

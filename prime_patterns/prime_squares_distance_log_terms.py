@@ -1,5 +1,5 @@
 """
-Prime_Squares_Distance_Log_terms.py — how often q^2 - p^2 is divisible by 5.
+prime_squares_distance_log_terms.py — how often q^2 - p^2 is divisible by 5.
 
 For consecutive primes p, q, count the fraction of differences q^2 - p^2 that are
 divisible by 5, reporting the running percentage at doubling checkpoints. Built

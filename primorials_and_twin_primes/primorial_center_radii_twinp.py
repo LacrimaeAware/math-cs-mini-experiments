@@ -1,5 +1,5 @@
 """
-Primorial_Center_Radii_TwinP.py — exact L/R expressions around P/A^2.
+primorial_center_radii_twinp.py — exact L/R expressions around P/A^2.
 
 For each prime cutoff p_max (giving primorial P) and each (A, B): compute the
 exact midpoint m = nearest_int(P / A^2), set L = m - B and R = m + B, and

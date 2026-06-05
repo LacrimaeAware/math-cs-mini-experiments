@@ -73,7 +73,7 @@ def set_partitions(collection):
 
 def valid_groupings(S):
     """
-    Your rule:
+    Rule:
 
       - Partition S into omission blocks M_i.
       - Each M_i is the set of elements missing from term i.

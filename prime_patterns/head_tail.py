@@ -1,4 +1,4 @@
-# head_tail_grid.py
+# head_tail.py
 #
 # Scan N = A * base**k + X over grids in (A, k) for given tails X and bases,
 # record primality, compare to expected prime counts (sum 1/log N),

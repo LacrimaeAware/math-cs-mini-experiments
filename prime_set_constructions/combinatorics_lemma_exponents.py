@@ -49,7 +49,7 @@ def set_partitions(collection):
         # or start a new block with 'first' alone
         yield [frozenset({first}), *rest]
 
-# ---------- your lemma: each element missing from exactly one group ----------
+# ---------- rule: each element missing from exactly one group ----------
 
 def valid_groupings(S):
     """
@@ -69,7 +69,7 @@ def valid_groupings(S):
     groupings = set()
 
     for part in set_partitions(S):
-        # need at least 2 groups (your condition)
+        # need at least 2 groups (rule)
         if len(part) < 2:
             continue
 
@@ -298,7 +298,7 @@ def analyze_factor_exponents(
 
 
 if __name__ == "__main__":
-    # Example: your S up to 17
+    # Example: S up to 17
     S = {1, 2, 3, 5, 7, 11, 13, 17}
 
     print("=== BASE (no exponents) ===")

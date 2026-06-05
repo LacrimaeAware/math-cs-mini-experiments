@@ -1,12 +1,12 @@
 """
-Chunks_of_X_symm.py — coprime counts per block of a primorial wheel.
+chunks_of_x_symm.py — coprime counts per block of a primorial wheel.
 
 For N = primorial of all primes <= --pmax, partition [1..limit] into fixed-size
 blocks (--block) and print the number of integers coprime to N in each block.
 A tool for spotting symmetry/structure in how a primorial's totatives spread
 across equal-length windows. Example:
 
-    python Chunks_of_X_symm.py --pmax 19 --block 510510
+    python chunks_of_x_symm.py --pmax 19 --block 510510
 """
 
 import math

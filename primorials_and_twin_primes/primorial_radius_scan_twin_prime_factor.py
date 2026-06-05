@@ -1,5 +1,5 @@
 """
-Primorial_radius_scan_twin_prime_factor.py — twin-prime factors within a radius.
+primorial_radius_scan_twin_prime_factor.py — twin-prime factors within a radius.
 
 For each n in [MIN_N, MAX_N], scan offsets d = 1..RADIUS on both sides of the
 n-th primorial P (N = P + d and/or P - d), factor each N, and record whether a
