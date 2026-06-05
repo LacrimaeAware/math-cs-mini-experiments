@@ -1,0 +1,111 @@
+=== live run log (index primorial, sig=indexprim_52a1d2fdb6a0) ===
+[cached] n=1 p_n=2  p_n# + 5 (1 digits) factors: 7 -> twin
+[cached] n=1 p_n=2  p_n# - 5 (1 digits) factors: 1 -> NO-twin
+[cached] n=1 p_n=2  p_n# + 6 (1 digits) factors: 2^3 -> NO-twin
+[cached] n=1 p_n=2  p_n# - 6 (1 digits) factors: 1 -> NO-twin
+[cached] n=2 p_n=3  p_n# + 5 (2 digits) factors: 11 -> twin
+[cached] n=2 p_n=3  p_n# - 5 (1 digits) factors: 1 -> NO-twin
+[cached] n=2 p_n=3  p_n# + 6 (2 digits) factors: 2^2 * 3 -> NO-twin
+[cached] n=2 p_n=3  p_n# - 6 (1 digits) factors: 1 -> NO-twin
+[cached] n=3 p_n=5  p_n# + 5 (2 digits) factors: 5 * 7 -> twin
+[cached] n=3 p_n=5  p_n# - 5 (2 digits) factors: 5^2 -> NO-twin
+[cached] n=3 p_n=5  p_n# + 6 (2 digits) factors: 2^2 * 3^2 -> NO-twin
+[cached] n=3 p_n=5  p_n# - 6 (2 digits) factors: 2^3 * 3 -> NO-twin
+[cached] n=4 p_n=7  p_n# + 5 (3 digits) factors: 5 * 43 -> twin
+[cached] n=4 p_n=7  p_n# - 5 (3 digits) factors: 5 * 41 -> twin
+[cached] n=4 p_n=7  p_n# + 6 (3 digits) factors: 2^3 * 3^3 -> NO-twin
+[cached] n=4 p_n=7  p_n# - 6 (3 digits) factors: 2^2 * 3 * 17 -> twin
+[cached] n=5 p_n=11  p_n# + 5 (4 digits) factors: 5 * 463 -> twin
+[cached] n=5 p_n=11  p_n# - 5 (4 digits) factors: 5 * 461 -> twin
+[cached] n=5 p_n=11  p_n# + 6 (4 digits) factors: 2^2 * 3 * 193 -> twin
+[cached] n=5 p_n=11  p_n# - 6 (4 digits) factors: 2^8 * 3^2 -> NO-twin
+[cached] n=6 p_n=13  p_n# + 5 (5 digits) factors: 5 * 6007 -> NO-twin
+[cached] n=6 p_n=13  p_n# - 5 (5 digits) factors: 5^2 * 1201 -> NO-twin
+[cached] n=6 p_n=13  p_n# + 6 (5 digits) factors: 2^2 * 3 * 2503 -> NO-twin
+[cached] n=6 p_n=13  p_n# - 6 (5 digits) factors: 2^3 * 3^3 * 139 -> twin
+[cached] n=7 p_n=17  p_n# + 5 (6 digits) factors: 5 * 102103 -> twin
+[cached] n=7 p_n=17  p_n# - 5 (6 digits) factors: 5 * 102101 -> twin
+[cached] n=7 p_n=17  p_n# + 6 (6 digits) factors: 2^2 * 3^3 * 29 * 163 -> twin
+[cached] n=7 p_n=17  p_n# - 6 (6 digits) factors: 2^3 * 3 * 89 * 239 -> twin
+[cached] n=8 p_n=19  p_n# + 5 (7 digits) factors: 5 * 1939939 -> twin
+[cached] n=8 p_n=19  p_n# - 5 (7 digits) factors: 5 * 1939937 -> twin
+[cached] n=8 p_n=19  p_n# + 6 (7 digits) factors: 2^4 * 3^3 * 22453 -> NO-twin
+[cached] n=8 p_n=19  p_n# - 6 (7 digits) factors: 2^2 * 3 * 808307 -> twin
+[cached] n=9 p_n=23  p_n# + 5 (9 digits) factors: 5^3 * 1784743 -> NO-twin
+[cached] n=9 p_n=23  p_n# - 5 (9 digits) factors: 5 * 59 * 756247 -> twin
+[cached] n=9 p_n=23  p_n# + 6 (9 digits) factors: 2^2 * 3 * 227 * 81899 -> twin
+[cached] n=9 p_n=23  p_n# - 6 (9 digits) factors: 2^7 * 3^2 * 31 * 6247 -> twin
+[cached] n=10 p_n=29  p_n# + 5 (10 digits) factors: 5 * 1293938647 -> NO-twin
+[cached] n=10 p_n=29  p_n# - 5 (10 digits) factors: 5^2 * 8167 * 31687 -> NO-twin
+[cached] n=10 p_n=29  p_n# + 6 (10 digits) factors: 2^2 * 3^5 * 41 * 162343 -> twin
+[cached] n=10 p_n=29  p_n# - 6 (10 digits) factors: 2^3 * 3 * 12373 * 21787 -> NO-twin
+[cached] n=11 p_n=31  p_n# + 5 (12 digits) factors: 5 * 43 * 19979 * 46691 -> twin
+[cached] n=11 p_n=31  p_n# - 5 (12 digits) factors: 5^3 * 547 * 1543 * 1901 -> NO-twin
+[cached] n=11 p_n=31  p_n# + 6 (12 digits) factors: 2^3 * 3^2 * 139 * 3889 * 5153 -> twin
+[cached] n=11 p_n=31  p_n# - 6 (12 digits) factors: 2^2 * 3 * 3371 * 4957987 -> twin
+[cached] n=12 p_n=37  p_n# + 5 (13 digits) factors: 5 * 571 * 2599207753 -> twin
+[cached] n=12 p_n=37  p_n# - 5 (13 digits) factors: 5 * 110563 * 13423547 -> NO-twin
+[cached] n=12 p_n=37  p_n# + 6 (13 digits) factors: 2^5 * 3^2 * 53 * 59 * 83 * 99277 -> twin
+[cached] n=12 p_n=37  p_n# - 6 (13 digits) factors: 2^2 * 3 * 41 * 60601 * 248887 -> twin
+[cached] n=13 p_n=41  p_n# + 5 (15 digits) factors: 5 * 151 * 402980481493 -> twin
+[cached] n=13 p_n=41  p_n# - 5 (15 digits) factors: 5 * 647 * 22447 * 4189849 -> twin
+[cached] n=13 p_n=41  p_n# + 6 (15 digits) factors: 2^4 * 3 * 6338547156817 -> NO-twin
+[cached] n=13 p_n=41  p_n# - 6 (15 digits) factors: 2^2 * 3^2 * 101 * 3631 * 23045219 -> twin
+[cached] n=14 p_n=43  p_n# + 5 (17 digits) factors: 5 * 131 * 419 * 433 * 110092111 -> twin
+[cached] n=14 p_n=43  p_n# - 5 (17 digits) factors: 5^2 * 173 * 197 * 8573 * 1791077 -> twin
+[cached] n=14 p_n=43  p_n# + 6 (17 digits) factors: 2^2 * 3 * 51427 * 21199566589 -> NO-twin
+[cached] n=14 p_n=43  p_n# - 6 (17 digits) factors: 2^3 * 3^2 * 193 * 941476779769 -> twin
+[cached] n=15 p_n=47  p_n# + 5 (18 digits) factors: 5 * 97 * 829 * 1069 * 1117 * 1280767 -> twin
+[cached] n=15 p_n=47  p_n# - 5 (18 digits) factors: 5 * 122977956517698281 -> NO-twin
+[cached] n=15 p_n=47  p_n# + 6 (18 digits) factors: 2^3 * 3^4 * 1499 * 633024673433 -> NO-twin
+[cached] n=15 p_n=47  p_n# - 6 (18 digits) factors: 2^2 * 3 * 101 * 507334804115917 -> twin
+[cached] n=16 p_n=53  p_n# + 5 (20 digits) factors: 5 * 79 * 587 * 2797 * 50251089587 -> twin
+[cached] n=16 p_n=53  p_n# - 5 (20 digits) factors: 5^2 * 4967 * 262445407507067 -> twin
+[cached] n=16 p_n=53  p_n# + 6 (20 digits) factors: 2^6 * 3 * 169735200402031483 -> NO-twin
+[cached] n=16 p_n=53  p_n# - 6 (20 digits) factors: 2^2 * 3^6 * 10093 * 1107300136073 -> twin
+[cached] n=17 p_n=59  p_n# + 5 (22 digits) factors: 5^2 * 67 * 283 * 4056242498083883 -> twin
+[cached] n=17 p_n=59  p_n# - 5 (22 digits) factors: 5 * 233 * 5763181 * 286376233681 -> NO-twin
+[cached] n=17 p_n=59  p_n# + 6 (22 digits) factors: 2^2 * 3^2 * 61 * 912253487 * 959792363 -> twin
+[cached] n=17 p_n=59  p_n# - 6 (22 digits) factors: 2^3 * 3 * 26267 * 3050025301319483 -> NO-twin
+[cached] n=18 p_n=61  p_n# + 5 (24 digits) factors: 5^2 * 2969 * 49758661 * 31756753759 -> twin
+[cached] n=18 p_n=61  p_n# - 5 (24 digits) factors: 5 * 1429 * 11329 * 1448975969255033 -> twin
+[cached] n=18 p_n=61  p_n# + 6 (24 digits) factors: 2^2 * 3^3 * 71 * 1931093 * 7920811883099 -> twin
+[cached] n=18 p_n=61  p_n# - 6 (24 digits) factors: 2^5 * 3 * 2131 * 261799 * 2189940557461 -> twin
+[cached] n=19 p_n=67  p_n# + 5 (25 digits) factors: 5 * 5501 * 53303557 * 5359965019067 -> twin
+[cached] n=19 p_n=67  p_n# - 5 (25 digits) factors: 5 * 151 * 10408372915338102060767 -> twin
+[cached] n=19 p_n=67  p_n# + 6 (25 digits) factors: 2^3 * 3^2 * 96857 * 1126850458677378199 -> NO-twin
+[cached] n=19 p_n=67  p_n# - 6 (25 digits) factors: 2^2 * 3 * 2729 * 1622041 * 147939172872313 -> twin
+[cached] n=20 p_n=71  p_n# + 5 (27 digits) factors: 5 * 587 * 58631 * 3242296572338463907 -> NO-twin
+[cached] n=20 p_n=71  p_n# - 5 (27 digits) factors: 5 * 101 * 2861 * 78236969 * 4935906125053 -> twin
+[cached] n=20 p_n=71  p_n# + 6 (27 digits) factors: 2^2 * 3 * 103 * 131 * 233 * 14789124221532421807 -> twin
+[cached] n=20 p_n=71  p_n# - 6 (27 digits) factors: 2^3 * 3^2 * 3583 * 68171 * 31725551103748679 -> twin
+[cached] n=21 p_n=73  p_n# + 5 (29 digits) factors: 5^2 * 89 * 157232063 * 116423292281223677 -> NO-twin
+[cached] n=21 p_n=73  p_n# - 5 (29 digits) factors: 5 * 1187 * 75117286723 * 91358800426093 -> NO-twin
+[cached] n=21 p_n=73  p_n# + 6 (29 digits) factors: 2^2 * 3 * 8821 * 440894717 * 872724245228039 -> twin
+[cached] n=21 p_n=73  p_n# - 6 (29 digits) factors: 2^3 * 3^2 * 565690008322903113203073937 -> NO-twin
+[cached] n=22 p_n=79  p_n# + 5 (31 digits) factors: 5 * 137 * 1646398589113 * 2853070734034667 -> twin
+[cached] n=22 p_n=79  p_n# - 5 (31 digits) factors: 5^3 * 14173 * 1816210974297987953375621 -> NO-twin
+[cached] n=22 p_n=79  p_n# + 6 (31 digits) factors: 2^3 * 3 * 208513 * 642974452300470655686353 -> twin
+[cached] n=22 p_n=79  p_n# - 6 (31 digits) factors: 2^2 * 3^3 * 103 * 11843971 * 24421918642413852181 -> twin
+[cached] n=23 p_n=83  p_n# + 5 (33 digits) factors: 5 * 53412903137855170271124803598559 -> NO-twin
+[cached] n=23 p_n=83  p_n# - 5 (33 digits) factors: 5 * 13399153 * 3986289516796708737569069 -> NO-twin
+[cached] n=23 p_n=83  p_n# + 6 (33 digits) factors: 2^2 * 3^2 * 73847 * 100457144760742500393314713 -> twin
+[cached] n=23 p_n=83  p_n# - 6 (33 digits) factors: 2^4 * 3 * 71597 * 77710575538918021284534739 -> NO-twin
+[cached] n=24 p_n=89  p_n# + 5 (35 digits) factors: 5 * 189337 * 25107339713152263710368852999 -> NO-twin
+[cached] n=24 p_n=89  p_n# - 5 (35 digits) factors: 5 * 311 * 15285364563566270592058223537851 -> twin
+[cached] n=24 p_n=89  p_n# + 6 (35 digits) factors: 2^2 * 3 * 179 * 4199021 * 2635262433341594101063327 -> twin
+[cached] n=24 p_n=89  p_n# - 6 (35 digits) factors: 2^5 * 3^2 * 283 * 857 * 22292335159 * 15264791811245227 -> twin
+[cached] n=25 p_n=97  p_n# + 5 (37 digits) factors: 5^2 * 1988243 * 46384027786251849995259174001 -> NO-twin
+[cached] n=25 p_n=97  p_n# - 5 (37 digits) factors: 5 * 3617 * 373777 * 341072607875882383100220157 -> NO-twin
+[cached] n=25 p_n=97  p_n# + 6 (37 digits) factors: 2^2 * 3 * 883 * 217588520568659722985381478608131 -> twin
+[cached] n=25 p_n=97  p_n# - 6 (37 digits) factors: 2^5 * 3^2 * 26562634903656913 * 301379902569573481 -> NO-twin
+-> factoring n=26 p_n=101 p_n# + 5 (39 digits) ...
+[101/200] n=26 p_n=101 (39 digits) PARTIAL factors: 5^2 * 509 * 1627883 * 11241346222819111017074637509 -> NO-twin | rate 155.75 cases/s
+
+-> factoring n=26 p_n=101 p_n# - 5 (39 digits) ...
+[102/200] n=26 p_n=101 (39 digits) PARTIAL factors: 5 * 181 * 34127 * 7539674742993545587842853380799 -> twin | rate 78.60 cases/s
+
+-> factoring n=26 p_n=101 p_n# + 6 (39 digits) ...
+[103/200] n=26 p_n=101 (39 digits) FULL factors: 2^2 * 3^4 * 1051 * 683835395914817636642537139468899 -> twin | rate 52.54 cases/s
+
+-> factoring n=26 p_n=101 p_n# - 6 (39 digits) ...

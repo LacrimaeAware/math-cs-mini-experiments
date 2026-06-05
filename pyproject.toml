@@ -1,0 +1,15 @@
+[project]
+name = "mathexperimentation"
+version = "0.1.0"
+description = "Experimental number-theory scripts: primes, primorials, twin primes, prime gaps, and combinatorial prime constructions."
+requires-python = ">=3.13"
+dependencies = [
+    "ipython==9.10.0",
+    "keras>=3.13.2",
+    "matplotlib==3.10.7",
+    "numpy==2.4.1",
+    "pandas==2.3.3",
+    "sympy==1.14.0",
+    "tensorflow==2.21.0rc0",
+    "tqdm==4.67.1",
+]

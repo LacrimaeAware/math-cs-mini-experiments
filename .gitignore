@@ -1,0 +1,23 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- Virtual environment (managed by uv; recreate with `uv sync`) ---
+.venv/
+venv/
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# Note: outputs/ is intentionally tracked — the heatmaps, the training video and
+# the run data are kept as a record / gallery of past experiments.
