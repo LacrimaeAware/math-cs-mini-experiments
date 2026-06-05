@@ -1,5 +1,5 @@
 """
-fuckjupyter.py — MNIST + Keras "first neural net" warm-up (incomplete).
+mnist_keras_intro.py — MNIST + Keras "first neural net" warm-up (incomplete).
 
 A scratch script from working through a deep-learning intro: loads MNIST, builds
 a tiny dense classifier (512 relu -> 10 softmax), compiles it, and flattens /

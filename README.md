@@ -11,6 +11,10 @@ runs standalone and prints (or plots) what it found. Shared primality/sieve
 helpers live in [`prime_lib.py`](prime_lib.py); generated artifacts go to
 [`outputs/`](outputs/).
 
+**New here?** Start with **[`docs/research_overview.md`](docs/research_overview.md)** —
+it ties each experiment to the underlying idea (modular sieves, primorial
+structure, twin-prime constraints) and explains why the scripts exist.
+
 ---
 
 ## Layout
@@ -25,7 +29,9 @@ prime_set_constructions/      # building primes from signed products of small-pr
 prime_patterns/               # primality scans over families of integers
 ml_and_visuals/               # the "weird stuff": ML + plotting side-quests
 
+docs/                         # research_overview.md — how the experiments tie together
 outputs/                      # all generated images, data, caches (gallery + records)
+private/                      # (git-ignored) long-form research notes, not for publication
 pyproject.toml / uv.lock      # dependencies (managed with uv)
 ```
 
@@ -77,8 +83,8 @@ pyproject.toml / uv.lock      # dependencies (managed with uv)
 ### `ml_and_visuals/` — the side-quests
 - **`generateplot.py`** — animates logistic-regression gradient descent; **produces
   `outputs/linear_classifier_training.mp4`**. *(Needs ffmpeg — see notes.)*
-- **`fuckjupyter.py`** — an MNIST + Keras "first neural net" warm-up. *(Incomplete: it
-  sets up the model but never calls `.fit()`.)*
+- **`mnist_keras_intro.py`** — an MNIST + Keras "first neural net" warm-up.
+  *(Incomplete: it sets up the model but never calls `.fit()`.)*
 - **`region_plot_3d.py`** — an interactive Plotly 3D plot of a calculus region. *(Needs
   `plotly`.)*
 
@@ -119,7 +125,7 @@ small example configs.
   `FFMPEG_PATH` environment variable or put `ffmpeg` on your `PATH`.
 - **`ml_and_visuals/region_plot_3d.py`** needs `plotly` (`pip install plotly`); it is
   not listed in `pyproject.toml`.
-- **`ml_and_visuals/fuckjupyter.py`** is intentionally incomplete (no training step).
+- **`ml_and_visuals/mnist_keras_intro.py`** is intentionally incomplete (no training step).
 - **`primorial_wheels/Nonlinear_Arithmetic_Sets.py`** starts its search immediately on
   run (no `__main__` guard); edit the `T` at the bottom to control the search size.
 - Primality for large integers uses **probabilistic** Miller–Rabin
