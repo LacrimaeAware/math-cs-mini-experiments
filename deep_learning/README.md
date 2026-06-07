@@ -12,5 +12,8 @@ kept here.
   perturbation, and walk-forward checks. The result is a weak short-horizon
   directional signal, documented with its caveats rather than presented as a
   trading system.
+- [`cnn_image_regression/`](cnn_image_regression/): two small CNN image-regression
+  tasks (clock reading with a sin/cos circular target encoding, and triangle
+  counting) on synthetically generated images.
 
-More experiments will be added (image-based assignments and others).
+More experiments will be added.

@@ -22,5 +22,8 @@ Thumbs.db
 # --- Private notes: never committed (raw research archive, informal logs) ---
 private/
 
-# Note: outputs/ is intentionally tracked — the heatmaps, the training video and
+# --- Temp helper scripts (root-level, prefixed with _) ---
+/_*.py
+
+# Note: outputs/ is intentionally tracked: the heatmaps, the training video and
 # the run data are kept as a record / gallery of past experiments.
