@@ -16,7 +16,7 @@ from typing import List, Tuple, Optional
 # deliberately keeps its own deterministic Miller-Rabin (fixed bases) below.
 import sys
 import pathlib
-sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
+sys.path.append(next(str(p) for p in pathlib.Path(__file__).resolve().parents if (p / "prime_lib.py").exists()))
 from prime_lib import sieve_primes
 
 # ---------- small sieve ----------

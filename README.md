@@ -1,133 +1,75 @@
 # MathExperimentation
 
-A personal **experimental-math & code playground** — currently a collection of
-self-contained Python scripts probing the structure of **primes and primorials**:
-their distribution, gaps, coprime/"wheel" structure, twin-prime factors near
-primorials, and prime-generating set constructions. Plus a couple of unrelated
-machine-learning / visualization side-experiments.
+A personal **experimental-math & code playground**. Currently centered on
+**number theory** (primes, primorials, twin primes, modular sieves), with room to
+grow into other domains. It's a lab notebook in code: each script runs standalone
+and prints or plots what it found.
 
-Nothing here is a polished library; it's a lab notebook in code. Each script
-runs standalone and prints (or plots) what it found. Shared primality/sieve
-helpers live in [`prime_lib.py`](prime_lib.py); generated artifacts go to
-[`outputs/`](outputs/).
-
-**New here?** Start with **[`docs/research_overview.md`](docs/research_overview.md)** —
-it ties each experiment to the underlying idea (modular sieves, primorial
-structure, twin-prime constraints) and explains why the scripts exist.
-
----
-
-## Layout
+## Map
 
 ```
-prime_lib.py                  # shared helpers: primality tests, sieves, primorials, output paths
-main.py                       # tiny entry stub (just prints a pointer to this README)
+number_theory/                  THE MAIN BODY — number-theory experiments + notes
+  README.md                       area hub + a notes <-> scripts crosswalk
+  notes/                          written math (start: twin_primes_consolidated.md)
+  primorials_and_twin_primes/     primes near a primorial (offset lemma, twin-factor scans)
+  primorial_wheels/               coprime / residue / gap structure of primorial moduli
+  prime_set_constructions/        omission-sum / CRT-basis constructions
+  prime_patterns/                 primality scans (heatmaps, left-truncatable chains)
 
-primorials_and_twin_primes/   # behavior of primes in the neighborhood of a primorial
-primorial_wheels/             # coprime / residue / gap structure of primorial moduli
-prime_set_constructions/      # building primes from signed products of small-prime sets
-prime_patterns/               # primality scans over families of integers
-ml_and_visuals/               # the "weird stuff": ML + plotting side-quests
+ml_and_visuals/                 side experiments (logistic-reg animation, MNIST, 3D plot)
 
-docs/                         # research_overview.md — how the experiments tie together
-outputs/                      # all generated images, data, caches (gallery + records)
-private/                      # (git-ignored) long-form research notes, not for publication
-pyproject.toml / uv.lock      # dependencies (managed with uv)
+docs/research_overview.md       deep script-by-script crosswalk of the number-theory ideas
+prime_lib.py                    shared helpers: primality, sieves, primorials, output paths
+main.py                         tiny entry stub
+outputs/                        generated images / data / caches (a gallery of past runs)
+private/                        (git-ignored) raw archive + personal project log
+pyproject.toml / uv.lock        dependencies (managed with uv)
 ```
 
----
+## Where to start
+- **The math, tied to the code** → [`number_theory/README.md`](number_theory/README.md)
+- **The latest written notes** → [`number_theory/notes/twin_primes_consolidated.md`](number_theory/notes/twin_primes_consolidated.md)
+- **Deep idea ↔ script map** → [`docs/research_overview.md`](docs/research_overview.md)
 
-## The experiments
+## Domains
+- **Number theory** (`number_theory/`) — the main, ongoing work; self-contained.
+- **Machine learning & visuals** (`ml_and_visuals/`) — a few standalone practice
+  scripts (a logistic-regression training animation, an incomplete MNIST warm-up,
+  a 3D calculus region plot). Kept separate from the number theory.
 
-### `primorials_and_twin_primes/` — primes near a primorial
-- **`plus_or_minus_primorial_squares.py`** — for the n-th primorial `p_n#`, factor
-  `p_n# ± offset` and check whether any factor is part of a *twin* prime pair.
-  Cached + logged to `outputs/primorial_squares_cache/`.
-- **`primorial_radius_scan_twin_prime_factor.py`** — same idea, sweeping a whole
-  radius of offsets `d = 1..R` and ranking which offsets most often yield a
-  twin-prime factor.
-- **`primorial_to_prime_distance_run_ratios.py`** — "first composite distance"
-  from a primorial via a bidirectional nearest-prime search.
-- **`primorial_center_radii_twinp.py`** — exact rational expressions around the
-  midpoint `m ≈ P/A²`, factoring `m ± B`.
-
-### `primorial_wheels/` — coprime & gap structure
-- **`primorial_gap_density_count.py`** — worst-case deviation of a model "period" for
-  the residue classes of each prime inside a primorial modulus.
-- **`primorial_gap_freq.py`** — wheel "border-merge" gap statistics: which gaps merge
-  with which when you sieve a wheel by its next prime. (CLI: `--primes 2 3 5 7 --next 11`)
-- **`orbit_primorials.py`** / **`extended_orbits.py`** — reconstruct the coprimes of
-  `N` via `C ± Pˣ` "orbits" over squarefree divisors `P`, compared against Euler's φ(N).
-- **`chunks_of_6_symm.py`** — visualize totative residues mod 6 (the `6k ± 1` structure).
-- **`chunks_of_x_symm.py`** — coprime counts per fixed-size block of a primorial. (CLI: `--pmax 19 --block 510510`)
-- **`nonlinear_arithmetic_sets.py`** — signed-sum sets that cover every coprime mod 210.
-
-### `prime_set_constructions/` — making primes from small-prime sets
-- **`combinatorics_lemma.py`** — the "omission-block lemma": partition a set so each
-  element is missing from exactly one term, sign each term `±`, and count how many
-  signed sums land on primes.
-- **`combinatorics_lemma_exponents.py`** — adds factor-level exponents on one active term.
-- **`combinatorics_lemma_exponents_exhaustive.py`** — the exhaustive search, recording
-  representations of each prime reached.
-- **`clustering_prime_products.py`** — branch-and-bound partition of the first k primes
-  to make the group products as balanced as possible.
-
-### `prime_patterns/` — primality scans
-- **`head_tail.py`** — primality of `A·baseᵏ + X` over `(A, k)` grids vs. the expected
-  prime count `Σ 1/log N`. **Generates the heatmaps** in `outputs/heatmaps/`.
-- **`prime_deadends.py`** — DFS that prepends digits to a fixed tail, hunting for
-  left-truncatable prime chains. Writes `outputs/prefix_chain_summary.txt`.
-- **`prime_squares_distance_log_terms.py`** — how often `q² − p²` is divisible by 5
-  over consecutive primes. *(Needs a `primes.txt` — see notes below.)*
-
-### `ml_and_visuals/` — the side-quests
-- **`logistic_regression_animation.py`** — animates logistic-regression gradient descent; **produces
-  `outputs/linear_classifier_training.mp4`**. *(Needs ffmpeg — see notes.)*
-- **`mnist_keras_intro.py`** — an MNIST + Keras "first neural net" warm-up.
-  *(Incomplete: it sets up the model but never calls `.fit()`.)*
-- **`region_plot_3d.py`** — an interactive Plotly 3D plot of a calculus region. *(Needs
-  `plotly`.)*
-
----
+New domains can be added later as sibling top-level folders.
 
 ## Running
 
-This project uses [uv](https://docs.astral.sh/uv/). To set up and run a script:
+Uses [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv sync                                   # create .venv from pyproject.toml / uv.lock
-uv run python primorial_wheels/chunks_of_x_symm.py --pmax 19 --block 510510
+uv sync
+uv run python number_theory/primorial_wheels/chunks_of_x_symm.py --pmax 19 --block 510510
 ```
 
-Or activate the environment and run directly (also works from PyCharm's "Run"):
+Or run directly (also works from PyCharm's "Run"):
 
 ```bash
-.venv/Scripts/python primorial_wheels/primorial_gap_freq.py --primes 2 3 5 7 --next 11
+.venv/Scripts/python number_theory/primorial_wheels/primorial_gap_freq.py --primes 2 3 5 7 --next 11
 ```
 
-Scripts can be launched from anywhere — each one bootstraps the repo root onto
-`sys.path` so it can `import prime_lib`, and writes its artifacts to `outputs/`
-regardless of the current working directory. Most scripts have a config block at
-the top (constants or `argparse` flags) you can edit.
-
-Requires **Python ≥ 3.13**. Heavy scripts (e.g. `head_tail.py` with large `k`,
-`extended_orbits.py` with big primorials) can run for a while — start with the
-small example configs.
-
----
+Scripts can be launched from anywhere — each finds the repo root automatically to
+`import prime_lib`, and writes artifacts to `outputs/`. Most have a config block
+(constants or `argparse`) at the top. Requires **Python ≥ 3.13**; some scripts
+(large `k`, large primorials) run for a while — start with the small example configs.
 
 ## Notes & caveats
+- **`number_theory/prime_patterns/prime_squares_distance_log_terms.py`** needs a
+  `primes.txt` (one prime per line) in the working directory — not included.
+- **`ml_and_visuals/logistic_regression_animation.py`** needs `ffmpeg` (set
+  `FFMPEG_PATH` or put it on `PATH`).
+- **`ml_and_visuals/region_plot_3d.py`** needs `plotly` (not in `pyproject.toml`).
+- **`ml_and_visuals/mnist_keras_intro.py`** is intentionally incomplete (no `.fit()`).
+- **`number_theory/primorial_wheels/nonlinear_arithmetic_sets.py`** starts its
+  search on run (no `__main__` guard); edit `T` at the bottom.
+- Large-integer primality uses probabilistic Miller–Rabin (`prime_lib.is_probable_prime`).
 
-- **`prime_patterns/prime_squares_distance_log_terms.py`** needs an input file
-  `primes.txt` (one prime per line) in the working directory. It is **not** in the
-  repo; generate or download a prime list and point `PRIME_FILE` at it.
-- **`ml_and_visuals/logistic_regression_animation.py`** needs an `ffmpeg` binary. Set the
-  `FFMPEG_PATH` environment variable or put `ffmpeg` on your `PATH`.
-- **`ml_and_visuals/region_plot_3d.py`** needs `plotly` (`pip install plotly`); it is
-  not listed in `pyproject.toml`.
-- **`ml_and_visuals/mnist_keras_intro.py`** is intentionally incomplete (no training step).
-- **`primorial_wheels/nonlinear_arithmetic_sets.py`** starts its search immediately on
-  run (no `__main__` guard); edit the `T` at the bottom to control the search size.
-- Primality for large integers uses **probabilistic** Miller–Rabin
-  (`prime_lib.is_probable_prime`), which is more than reliable enough here but is not a
-  certificate of primality.
+## Publishing
+The tracked files are clean for public release (raw / personal notes are
+git-ignored in `private/`). Publish steps are in `private/PROJECT_LOG.md`.

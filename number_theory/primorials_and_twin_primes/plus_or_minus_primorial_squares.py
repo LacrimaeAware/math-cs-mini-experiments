@@ -12,7 +12,7 @@ to outputs/primorial_squares_cache/.
 # Project-local shared output directory (see prime_lib.py at repo root).
 import sys
 import pathlib
-sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
+sys.path.append(next(str(p) for p in pathlib.Path(__file__).resolve().parents if (p / "prime_lib.py").exists()))
 from prime_lib import ensure_output_dir
 
 import os, json, time, math, hashlib, multiprocessing as mp

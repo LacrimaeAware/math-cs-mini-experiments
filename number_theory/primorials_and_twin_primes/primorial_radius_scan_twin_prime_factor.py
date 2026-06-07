@@ -10,7 +10,7 @@ leaderboard of which offsets d most often yield a twin-prime factor.
 # Project-local shared helpers + output directory (see prime_lib.py at repo root).
 import sys
 import pathlib
-sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
+sys.path.append(next(str(p) for p in pathlib.Path(__file__).resolve().parents if (p / "prime_lib.py").exists()))
 from prime_lib import ensure_output_dir, sieve_primes
 
 import os, json, time, math

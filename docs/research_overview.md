@@ -57,24 +57,24 @@ problem in every thread is the short-interval / maximum-gap control.
 
 | Idea | Script(s) | What the code does |
 |------|-----------|--------------------|
-| Wheel lifting (each new prime expands the cycle, removes predictable residues) | `primorial_wheels/primorial_gap_freq.py` | Tracks how gaps merge when a wheel is lifted by its next prime |
-| Reduced-residue / coprime counts of a primorial | `primorial_wheels/chunks_of_x_symm.py`, `orbit_primorials.py`, `extended_orbits.py` | Counts / reconstructs the integers coprime to a primorial |
-| `6x ≡ ±1 (mod p)` residue symmetry | `primorial_wheels/chunks_of_6_symm.py` | Visualizes the `6k ± 1` structure of totatives |
-| Maximum-gap / longest covered run (the missing object) | `primorial_wheels/primorial_gap_density_count.py` | Searches worst-case deviation of a model period per residue class |
-| Card / residue-covering model | `primorial_wheels/nonlinear_arithmetic_sets.py` | Signed-sum sets covering all coprimes mod 210 |
-| Primorial-neighborhood offset lemma | `primorials_and_twin_primes/primorial_to_prime_distance_run_ratios.py` | First composite distance from a primorial |
-| Empirical twin-factor data | `primorials_and_twin_primes/plus_or_minus_primorial_squares.py`, `primorial_radius_scan_twin_prime_factor.py` | Scans `p_n# ± offset` for twin-prime factors |
-| Midpoint / center-coordinate expressions | `primorials_and_twin_primes/primorial_center_radii_twinp.py` | Exact rational `L/R` expressions around `P/A²` |
-| Euclid-like omission sums = CRT basis | `prime_set_constructions/combinatorics_lemma*.py` | "Each element missing from one term," counts primes among signed sums |
-| Balanced prime-product partitions | `prime_set_constructions/clustering_prime_products.py` | Branch-and-bound partition of the first `k` primes |
-| Density vs. actual prime counts | `prime_patterns/head_tail.py` | Primality of `A·baseᵏ + X` grids vs. expected `Σ 1/log N` |
-| Left-truncatable prime chains | `prime_patterns/prime_deadends.py` | Digit-prepending DFS keeping primality |
-| Residue statistics over primes | `prime_patterns/prime_squares_distance_log_terms.py` | How often `q² − p²` is divisible by 5 |
+| Wheel lifting (each new prime expands the cycle, removes predictable residues) | `number_theory/primorial_wheels/primorial_gap_freq.py` | Tracks how gaps merge when a wheel is lifted by its next prime |
+| Reduced-residue / coprime counts of a primorial | `number_theory/primorial_wheels/chunks_of_x_symm.py`, `orbit_primorials.py`, `extended_orbits.py` | Counts / reconstructs the integers coprime to a primorial |
+| `6x ≡ ±1 (mod p)` residue symmetry | `number_theory/primorial_wheels/chunks_of_6_symm.py` | Visualizes the `6k ± 1` structure of totatives |
+| Maximum-gap / longest covered run (the missing object) | `number_theory/primorial_wheels/primorial_gap_density_count.py` | Searches worst-case deviation of a model period per residue class |
+| Card / residue-covering model | `number_theory/primorial_wheels/nonlinear_arithmetic_sets.py` | Signed-sum sets covering all coprimes mod 210 |
+| Primorial-neighborhood offset lemma | `number_theory/primorials_and_twin_primes/primorial_to_prime_distance_run_ratios.py` | First composite distance from a primorial |
+| Empirical twin-factor data | `number_theory/primorials_and_twin_primes/plus_or_minus_primorial_squares.py`, `primorial_radius_scan_twin_prime_factor.py` | Scans `p_n# ± offset` for twin-prime factors |
+| Midpoint / center-coordinate expressions | `number_theory/primorials_and_twin_primes/primorial_center_radii_twinp.py` | Exact rational `L/R` expressions around `P/A²` |
+| Euclid-like omission sums = CRT basis | `number_theory/prime_set_constructions/combinatorics_lemma*.py` | "Each element missing from one term," counts primes among signed sums |
+| Balanced prime-product partitions | `number_theory/prime_set_constructions/clustering_prime_products.py` | Branch-and-bound partition of the first `k` primes |
+| Density vs. actual prime counts | `number_theory/prime_patterns/head_tail.py` | Primality of `A·baseᵏ + X` grids vs. expected `Σ 1/log N` |
+| Left-truncatable prime chains | `number_theory/prime_patterns/prime_deadends.py` | Digit-prepending DFS keeping primality |
+| Residue statistics over primes | `number_theory/prime_patterns/prime_squares_distance_log_terms.py` | How often `q² − p²` is divisible by 5 |
 
 ---
 
 ## 3. Theme 1 — Wheel structure & residue counting
-**Folder:** `primorial_wheels/`
+**Folder:** `number_theory/primorial_wheels/`
 
 The reduced residue system modulo a primorial has clean recursive structure:
 adding a prime `p_{k+1}` multiplies the cycle into `p_{k+1}` copies and removes a
@@ -96,7 +96,7 @@ the "twin" wheel). This yields exact counts (Euler-totient products, and
   keeps needing and not having.
 
 ## 4. Theme 2 — Primes near a primorial
-**Folder:** `primorials_and_twin_primes/`
+**Folder:** `number_theory/primorials_and_twin_primes/`
 
 **The offset lemma (valid):** if `M = p_k#` and `d` is composite with
 `1 < d < p_{k+1}²`, then `d` shares a small prime factor with `M`, so `M ± d`
@@ -117,7 +117,7 @@ offset that can escape is `p_{k+1}²` itself.
   midpoint `m ≈ P/A²` (the center-coordinate / reflection-symmetry idea).
 
 ## 5. Theme 3 — Building coprimes from small-prime sets
-**Folder:** `prime_set_constructions/`
+**Folder:** `number_theory/prime_set_constructions/`
 
 **Omission sums = CRT basis (valid).** For `M = ∏ p_i`, the omission term
 `E_i = M / p_i` is divisible by every prime in the set except `p_i`. A signed
@@ -135,7 +135,7 @@ combination `N = Σ c_i E_i` with `p_i ∤ c_i` is therefore coprime to `M` — 
   partition the first `k` primes into groups with balanced products.
 
 ## 6. Theme 4 — Primality scans & the density question
-**Folder:** `prime_patterns/`
+**Folder:** `number_theory/prime_patterns/`
 
 This is the empirical counterpart to the central methodological point: a
 full-cycle **density** (e.g. the twin-compatible density `δ_k`) gives the
