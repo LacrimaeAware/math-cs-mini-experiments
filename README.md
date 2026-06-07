@@ -1,10 +1,11 @@
 # MathExperimentation
 
-Exploratory number-theory scripts and notes on primes, primorials, twin primes,
-and modular sieves, plus a small set of unrelated machine-learning and plotting
-scripts. Each script is standalone and prints or plots its output. Shared
-primality, sieve, and primorial helpers are in `prime_lib.py`. Generated files are
-written to `outputs/`.
+Experiments and notes across mathematics and adjacent code, organized by domain
+so more areas can be added over time. The current content is mostly number theory
+(primes, primorials, twin primes, modular sieves), with a smaller set of
+machine-learning and plotting scripts. Each script is standalone and prints or
+plots its output. Shared primality, sieve, and primorial helpers are in
+`prime_lib.py`. Generated files are written to `outputs/`.
 
 ## Layout
 
