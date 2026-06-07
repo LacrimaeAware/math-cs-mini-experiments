@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+yfinance
+tensorflow; platform_system != "Darwin" or platform_machine != "arm64"
+keras

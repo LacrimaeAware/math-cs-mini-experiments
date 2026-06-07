@@ -15,5 +15,9 @@ kept here.
 - [`cnn_image_regression/`](cnn_image_regression/): two small CNN image-regression
   tasks (clock reading with a sin/cos circular target encoding, and triangle
   counting) on synthetically generated images.
+- [`crypto_hierarchical_forecasting/`](crypto_hierarchical_forecasting/): a BTC-USD
+  forecasting experiment using market-structure features and a mixture-of-experts
+  gated ensemble (the market-structure line of the same project as the event
+  robustness lab).
 
 More experiments will be added.
