@@ -19,5 +19,7 @@ kept here.
   forecasting experiment using market-structure features and a mixture-of-experts
   gated ensemble (the market-structure line of the same project as the event
   robustness lab).
+- [`backprop_from_scratch/`](backprop_from_scratch/): manual backpropagation for a
+  single neuron and a 2-2-1 network, plus a small MLP fit to a binary image.
 
 More experiments will be added.
