@@ -6,6 +6,10 @@ and keeps only the rules that survive same-day baselines, noise perturbation, an
 walk-forward checks. The purpose is to test whether apparent market signals
 generalize, not to provide a trading system.
 
+A detailed write-up (architecture, per-module detail, a consolidated results
+table, lessons, a validation roadmap, and references) is in
+[REPORT.md](REPORT.md).
+
 ## Pipeline
 
 ```text
