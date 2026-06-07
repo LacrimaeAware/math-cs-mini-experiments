@@ -1,6 +1,6 @@
 # Centers and the certificate
 
-(Notation — $W_L$, $L$-admissible, $\nu(L)$ — is in the [index](README.md).)
+(Notation, $W_L$, $L$-admissible, $\nu(L)$, is in the [index](README.md).)
 
 ## The certificate
 

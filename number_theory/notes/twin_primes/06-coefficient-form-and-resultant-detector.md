@@ -7,7 +7,7 @@ $0,21,27$ from base $2$):
 $$p\,(p+21)(p+27)=p^3+48\,p^2+567\,p,\qquad 48=21+27,\;\;567=21\cdot27,$$
 checking at $p=2$: $8+192+1134=1334=2\cdot23\cdot29$. The coefficients are the
 **elementary symmetric functions of the gaps**: each is a power of $p$ times a
-product of some subset of the gaps. The base prime is "excluded" — its gap is $0$,
+product of some subset of the gaps. The base prime is "excluded", its gap is $0$,
 so it only ever contributes a power of $p$ and never enters a cross-term (which is
 also the "$p$ appears twice" feeling: $p$ is both the pulled-out factor and the
 additive piece inside each binomial). Note two distinct objects: gaps-as-offsets
@@ -27,7 +27,7 @@ $\operatorname{Res}\!\big(f(x),f(x+2)\big)=\prod_i f(q_i+2)$, zero iff a twin pa
 exists, and a polynomial in the coefficients of $f$.
 
 Caveat on what this *is*: written as $\prod_i f(q_i+2)$ it is the inert
-"factor-testing" form — an exhaustive pairwise scan wearing a product sign,
+"factor-testing" form, an exhaustive pairwise scan wearing a product sign,
 equivalent to the very condition it tests, hence a reformulation rather than a
 lever. But the *instinct* is correct and is exactly how the problem is posed
 analytically: the twin count is the autocorrelation $\sum_n\Lambda(n)\Lambda(n+2)$,
