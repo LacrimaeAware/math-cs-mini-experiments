@@ -2,8 +2,8 @@
 
 Experiments and notes across mathematics and adjacent code, organized by domain
 so more areas can be added over time. The current content is mostly number theory
-(primes, primorials, twin primes, modular sieves), with a smaller set of
-machine-learning and plotting scripts. Each script is standalone and prints or
+(primes, primorials, twin primes, modular sieves), with machine-learning and
+deep-learning experiments and a few plotting scripts. Each script is standalone and prints or
 plots its output. Shared primality, sieve, and primorial helpers are in
 `prime_lib.py`. Generated files are written to `outputs/`.
 
@@ -21,6 +21,7 @@ MathExperimentation/
 │   ├── prime_set_constructions/
 │   └── prime_patterns/
 ├── ml_and_visuals/             logistic-regression animation, MNIST setup, 3D region plot
+├── deep_learning/              ML / deep-learning experiments (crypto event robustness lab, etc.)
 ├── docs/
 │   ├── research_overview.md    per-script description of the number-theory ideas
 │   └── conventions.md          writing conventions for this repository
