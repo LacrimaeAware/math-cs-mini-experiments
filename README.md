@@ -28,7 +28,7 @@ pyproject.toml / uv.lock        dependencies (managed with uv)
 
 ## Where to start
 - **The math, tied to the code** → [`number_theory/README.md`](number_theory/README.md)
-- **The latest written notes** → [`number_theory/notes/twin_primes_consolidated.md`](number_theory/notes/twin_primes_consolidated.md)
+- **The written notes** → [`number_theory/notes/twin_primes/`](number_theory/notes/twin_primes/) (short topic files + index)
 - **Deep idea ↔ script map** → [`docs/research_overview.md`](docs/research_overview.md)
 
 ## Domains
